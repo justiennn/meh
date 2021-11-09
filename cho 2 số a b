@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+   int a(0);
+   int b(0);
+   
+   cout << "Nhập số a: ";
+   cin >> a;
+   cout << "Nhập số b: ";
+   cin >> b;
+   
+   cout << "Tổng là: " <<a+b>>;
+   cout << "Hiệu là: " <<a-b>>;
+   cout << "Tích là: " <<a*b>>;
+   cout << "Thương là: " <<a/b>> "\n";
+}
