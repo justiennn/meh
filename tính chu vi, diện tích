@@ -1,0 +1,14 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main ()
+{
+   str bankinh (0);
+   
+   cout << "Nhập bán kính: ";
+   cin >> bankinh;
+   
+   cout << "Chu vi hình tròn là: " <<2*3.14*bankinh>>;
+   cout << "Diện tích hình tròn là: " <<3.14*pow(bankinh,2)>> "/n";
+}
