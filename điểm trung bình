@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+   int toan;
+   int ly;
+   int hoa;
+   
+   cout << "Nhập điểm Toán: ";
+   cin >> toan;
+   cout << "Nhập điểm Lý: ";
+   cin >> ly;
+   cout << "Nhập điểm Hóa: ";
+   cin >> hoa;
+   
+   cout << "Điểm trung bình của bạn là: " <<(toan+ly+hoa)/3>> "\n";
+}
