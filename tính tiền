@@ -1,0 +1,18 @@
+//tinh thue
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    string tensp;
+    int soluong, dongia;
+    
+    cout << "Nhap ten san pham, so luong va don gia: ";
+    cin >> tensp;
+    cin >> dongia;
+    cin >> soluong;
+
+    cout << "so tien phai tra la: " <<soluong*dongia*1.1<< "\n";
+
+}
