@@ -12,8 +12,8 @@ int main()
    cout << "Nhập số b: ";
    cin >> b;
    
-   cout << "Tổng là: " <<a+b>>;
-   cout << "Hiệu là: " <<a-b>>;
-   cout << "Tích là: " <<a*b>>;
-   cout << "Thương là: " <<a/b>> "\n";
+   cout << "Tổng là: " <<a+b<< "\n";
+   cout << "Hiệu là: " <<a-b<< "\n";
+   cout << "Tích là: " <<a*b<< "\n";
+   cout << "Thương là: " <<a/b<< "\n";
 }
