@@ -15,5 +15,5 @@ int main()
    cout << "Nhập điểm Hóa: ";
    cin >> hoa;
    
-   cout << "Điểm trung bình của bạn là: " <<(toan+ly+hoa)/3>> "\n";
+   cout << "Điểm trung bình của bạn là: " <<(toan+ly+hoa)/3<< "/n";
 }
