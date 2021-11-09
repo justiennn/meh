@@ -9,6 +9,6 @@ int main ()
    cout << "Nhập bán kính: ";
    cin >> bankinh;
    
-   cout << "Chu vi hình tròn là: " <<2*3.14*bankinh>>;
-   cout << "Diện tích hình tròn là: " <<3.14*pow(bankinh,2)>> "/n";
+   cout << "Chu vi hình tròn là: " <<2*3.14*bankinh<< "/n";
+   cout << "Diện tích hình tròn là: " <<3.14*pow(bankinh,2)<< "/n";
 }
