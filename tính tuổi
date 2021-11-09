@@ -1,0 +1,14 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main ()
+{
+   int nYOB(0);
+   int nCurYear(2021);
+   
+   cout <<"Nhập năm sinh của bạn: ";
+   cin >> nYOB;
+   
+   cout <<"Tuổi của bạn là: " <<nCurYear-nYOB<< "\n";
+}
