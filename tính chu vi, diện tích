@@ -4,7 +4,7 @@ using namespace std;
 
 int main ()
 {
-   str bankinh (0);
+   int bankinh (0);
    
    cout << "Nhập bán kính: ";
    cin >> bankinh;
