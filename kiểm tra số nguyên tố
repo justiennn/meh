@@ -1,22 +1,21 @@
 #include <iostream>
 using namespace std;
-int main ()
+int main()
 {
-   int snt;
-   
-   cout << "Nhập một số: ";
-   cin >> snt;
-   
-   int i;
-   i=1;
-   
-   while (i<snt)  {    
-       if (snt%i==0) 
-       break;
-       i++;
-       }
-   if (snt==i) {
-       cout << "Đây là số nguyên tố";
-       }
-   else {cout << "Đây không phải là số nguyên tố";}
+    int snt;
+    cout << "Nhap mot so: ";
+    cin >> snt;
+
+    int i;
+    i = 1;
+
+    while (i < snt) {
+        i++;
+        if (snt % i == 0) { break; }
+    }
+
+    if (snt == i) {
+        cout << "Day la so nguyen to";
+    }
+    else { cout << "Day khong phai la so nguyen to"; }
 }
