@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout << "Nhap bien so xe gom 4 chu so: ";
+    cin >> n;
+    int n1, n2, n3, n4;
+    n4 = n % 10; n = n / 10;
+    n3 = n % 10; n = n / 10;
+    n2 = n % 10; n = n / 10;
+    n1 = n;
+
+    int nut = n1 + n2 + n3 + n4;
+    if (nut >= 10) {
+        nut = nut % 10;
+    }
+    cout << "Nut cua bien so xe la: " << nut << "\n";
+}
