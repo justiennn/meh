@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int h1,h2,m1,m2,s1,s2;
+    cout << "Nhap gio, phut, giay 1: ";
+    cin >> h1;
+    cin >> m1;
+    cin >> s1;
+    cout << "Nhap gio, phut, giay 2: ";
+    cin >> h2;
+    cin >> m2;
+    cin >> s2;
+
+    //tinh tong
+    int tongh, tongm, tongs;
+    tongh=h1+h2;tongm=m1+m2;
+    tongs=(s1+s2)%60;
+    tongm=((m1+m2)+(s1+s2)/60)%60;
+    tongh=(h1+h2)+((m1+m2)+(s1+s2)/60)/60;
+
+    //tinh hieu
+    int hieuh,hieum,hieus,hieu;
+    h1=h1*3600;m1=m1*60;
+    h2=h2*3600;m2=m2*60;
+    hieu=abs((h1+m1+s1)-(h2+m2+s2));
+    hieuh=hieu/3600;
+    hieum=(hieu-hieuh*3600)/60;
+    hieus=(hieu-hieuh*3600)%60;
+
+    cout <<"Tong cua 2 gio la: " << tongh << ":" << tongm << ":" << tongs <<"\n";
+    cout <<"Hieu cua 2 gio la: " << hieuh << ":" << hieum << ":" << hieus <<"\n";
+
+    cout << endl;
+    system("pause");
+    return 0;
+}
