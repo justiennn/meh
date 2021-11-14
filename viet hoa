@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string.h>
+using namespace std;
+int main()
+{
+    char n;
+    cout << "Nhap mot ki tu: ";
+    cin >> n;
+    if (n >= 'a' && n <= 'z') {
+        n = n - 32;
+        cout << "Ki tu in hoa la: " << n << "\n";
+    }
+    else if (n >= 'A' && n <= 'Z') {
+        n = n + 32;
+        cout << "Ki tu in hoa la: " << n << "\n";
+    }
+    else if (n >= '0' && n <= '9'){
+            cout <<"Ki tu in hoa la: " << n << "\n";
+    }
+    cout << endl;
+    system("pause");
+    return 0;
+}
