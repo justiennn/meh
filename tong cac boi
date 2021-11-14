@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i,S;
+    S=0;
+    i=0;
+    while (i<100){
+       i++;
+       if (i%3==0){S=S+i;}
+       if (i%5==0){S=S+i;}
+       if (i%15==0){S=S-i;}
+    }
+    cout <<"Tong cac boi cua 3 va 5 (moi so chi cong 1 lan) la: "<< S <<"\n";
+    cout << endl;
+    system("pause");
+    return 0;
+}
