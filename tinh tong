@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int i,n,S;
+    cout << "Nhap mot so: ";
+    cin >> n;
+
+    i=0;S=0;
+    while (i<n){
+        i++;
+        S=S+i;
+    }
+    cout << endl;
+    system("pause");
+    return 0;
+}
