@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int m,y;
+    cout<<"Nhap thang: ";
+    cin>>m;
+    cout<<"Nhap nam: ";
+    cin>>y;
+    if (y>1975){
+        if (m>=1&&m<=12){
+            if (m==1||m==3||m==5||m==7||m==8||m==10||m==12){
+                cout<<"Thang nay co 31 ngay";
+            }
+            if (m==4||m==6||m==9||m==11){
+                cout<<"Thang nay co 30 ngay";
+            }
+            if (m==2){
+                if (y%4==0){cout<<"Thang nay co 29 ngay";}
+                else {cout<<"Thang nay co 28 ngay";}
+            }
+        }
+        else{cout<<"Thang khong hop le";}
+    }
+    else {cout<<"Nam khong hop le";}
+
+    cout << endl;
+    system("pause");
+    return 0;
+}
