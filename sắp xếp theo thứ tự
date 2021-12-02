@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+float nhap_so(){
+    float n;
+    cout << "Nhap so thuc: ";
+    cin >> n;
+    return n;
+}
+void thu_tu(float a,float b, float c){
+    float m=a;
+    if (a>b){m=a;a=b;b=m;}
+    if (a>c){m=a;a=c;c=m;}
+    if (b>c){m=b;b=c;c=m;}
+    cout << "Thu tu tang dan: " << a <<";"<< b <<";"<< c;
+}
+int main(){
+    float a=nhap_so();
+    float b=nhap_so();
+    float c=nhap_so();
+    thu_tu(a,b,c);
+    return 0;
+}
