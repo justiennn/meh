@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int nhap_so(){
+    int n;
+    do{cout << "Nhap so km di duoc: ";
+    cin >> n;}while(n<0);
+    return n;
+}
+int sotien(int n){
+    int tien;
+    if (n<=1) {tien=15000;}
+    if (n>1&&n<6){tien=15000+(n-1)*13500;}
+    if (n>=6&&n<120){tien=15000+4*13500+(n-5)*11000;}
+    if (n>=120){tien=(15000+4*13500+(n-5)*11000)*0.9;}
+    return tien;
+}
+int main(){
+    int n=nhap_so();
+    cout << "So tien phai tra la: " <<sotien(n)<<" VND";
+    return 0;
+}
