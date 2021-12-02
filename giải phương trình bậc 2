@@ -1,0 +1,31 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+float nhap_so(){
+    float n;
+    cout << "Nhap so: ";
+    cin >> n;
+    return n;
+}
+void phuong_trinh(float a, float b,float c){
+    float delta;
+    delta=b*b-4*a*c;
+    if (a==0){
+        cout << "Nghiem phuong trinh la: " <<c/b<< endl;}
+    else {
+        if (delta>0){
+            cout << "Nghiem phuong trinh la: " <<(-b-sqrt(delta))/(2*a)<< " va " <<(-b+sqrt(delta))/(2*a)<< endl;
+        }
+        if (delta==0){
+            cout << "Nghiem phuong trinh la: " <<-b/(2*a)<<endl;}
+         if (delta<0){
+            cout << "Phuong trinh vo nghiem" ;}
+    }
+}
+int main(){
+    float a=nhap_so();
+    float b=nhap_so();
+    float c=nhap_so();
+    phuong_trinh(a,b,c);
+    return 0;
+}
