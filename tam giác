@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+float nhap_so(){
+    float n;
+    do{cout << "Nhap so thuc: ";
+    cin >> n;}while (n<0);
+    return n;
+}
+void tam_giac(float a,float b,float c){
+
+    if (a+b<=c){cout << "Khong phai tam giac";}
+    else{
+    if (a*a+b*b==c*c){cout << "Tam giac vuong";}
+    if (a==b&&a==c){cout << "Tam giac deu";}
+    if (a==b&&a!=c){cout << "Tam giac can";}
+    if (a!=b&&a!=c){cout << "Tam giac thuong";}}
+
+}
+int main(){
+    float a=nhap_so();
+    float b=nhap_so();
+    float c=nhap_so();
+    tam_giac(a,b,c);
+    return 0;
+}
